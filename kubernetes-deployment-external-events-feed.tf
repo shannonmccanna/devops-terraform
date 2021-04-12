@@ -9,7 +9,7 @@ resource "kubernetes_deployment" "capstone-external-events-feed-deployment" {
 
   spec {
     replicas                  = 1
-    progress_deadline_seconds = 60
+    progress_deadline_seconds = 120
     selector {
       match_labels = {
         App = "capstone-external-events-feed"
